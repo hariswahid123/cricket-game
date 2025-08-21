@@ -1,58 +1,70 @@
-.container div{
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
-    font-size: 25px;
-}   
-
-
-
-
-
-
-
-/* Reset some default margins */
+/* Full-page center alignment */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #e9fbe5; /* Light green background */
-    color: #256029; /* Dark green text */
+    background-color: #e9fbe5;
+    color: #256029;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
+    justify-content: center; /* vertical centering */
+    min-height: 100vh;
 }
 
-/* Dice result box */
+/* Message box styling */
 #resultDice {
-    background-color: #d4f1c5; /* lighter green box */
+    background-color: #d4f1c5;
     border: 2px solid #76b852;
-    padding: 20px;
+    padding: 12px;
     border-radius: 12px;
-    margin-bottom: 20px;
     text-align: center;
+    width: 10%;
+    height: 20%;
+    max-width: 400px;
+    margin-bottom: 30px;
 }
 
 #luck-heading {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: #256029;
+    margin: 0;
 }
 
-/* Info section (runs, wickets, etc.) */
-div {
-    margin-bottom: 10px;
+section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+
+/* Stat box */
+section > div {
+    background-color: #f0fce8;
+    border: 1px solid #76b852;
+    border-radius: 10px;
+    padding: 10px 20px;
+    min-width: 100px;
+    min-height: 100px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+
+/* Stat values */
 h1 {
     margin: 5px 0;
     font-size: 28px;
     color: #2f7033;
 }
 
-/* Play button styling */
+/* Play button */
 button {
     background-color: #76b852;
     color: white;
@@ -62,11 +74,8 @@ button {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 20px;
 }
 
 button:hover {
     background-color: #5fa143;
 }
-
-

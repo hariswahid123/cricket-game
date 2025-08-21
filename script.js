@@ -1,12 +1,12 @@
 let dice1 = "<div class='container'><div>single Run<div></div>";
 let dice2 = " <div class='container'><div>two Run<div></div>";
 let dice3 = "<div class='container'><div>three run<div></div>";
-let dice4 = "<div class='container'><div>four Run<div></div>";
-let dice6 = "<div class='container'><div>six Run<div></div>";
+let dice4 = "<div class='container'><div style='color: rgba(15, 165, 158, 0.966)'>four Run<div></div>";
+let dice6 = "<div class='container'><div style='color:rgb(25, 201, 25)'>six Run<div></div>";
 
-let wide = "<div class='container'><div class='nospecial'>wide ball</div></div>";
+let wide = "<div class='container'><div class='nospecial' style='color: white'>wide ball</div></div>";
 let dotBall = "<div class='container'><div class='nospecial'>dot ball</div></div>";
-let wicket = "<div class='container'><div class='nospecial'>wicket</div></div>";
+let wicket = "<div class='container'><div class='nospecial'style='color: red';>wicket</div></div>";
 let noBall = "<div class='container'><div class='nospecial'>no ball</div></div>";
 
 let resultDice = document.getElementById("resultDice");
@@ -23,6 +23,17 @@ wickets.innerHTML = 0;
 overs.innerHTML = 0;
 
 function play() {
+
+    if (parseInt(wickets.innerHTML) >= 3) {
+        alert("All out!");
+        return;
+    }
+
+    if (totalBalls >= 12) {
+        alert("All over!");
+        return;
+    }
+
     let diceRoll = Math.ceil(Math.random() * 9);
 
     if (diceRoll === 1) {
