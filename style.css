@@ -1,0 +1,72 @@
+.container div{
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 25px;
+}   
+
+
+
+
+
+
+
+/* Reset some default margins */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e9fbe5; /* Light green background */
+    color: #256029; /* Dark green text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+/* Dice result box */
+#resultDice {
+    background-color: #d4f1c5; /* lighter green box */
+    border: 2px solid #76b852;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#luck-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #256029;
+}
+
+/* Info section (runs, wickets, etc.) */
+div {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 5px 0;
+    font-size: 28px;
+    color: #2f7033;
+}
+
+/* Play button styling */
+button {
+    background-color: #76b852;
+    color: white;
+    font-size: 18px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #5fa143;
+}
+
+
