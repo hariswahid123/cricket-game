@@ -79,3 +79,10 @@ button {
 button:hover {
     background-color: #5fa143;
 }
+
+@media (max-width: 480px) {
+  #resultDice {
+    width: 40%;
+    height: auto; 
+  }
+}
